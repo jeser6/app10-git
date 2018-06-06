@@ -1,0 +1,3024 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <title>App10 tutorial DAW</title>
+     <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+     <!--grupo CSS-->
+     <link rel="stylesheet" href="css/tema-app10.min.css"/>
+     <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+     <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+     <!--grupo JavaScript-->
+     
+          <!-- Start WOWSlider.com HEAD section -->
+     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+     <script type="text/javascript" src="engine1/jquery.js"></script>
+     <!-- End WOWSlider.com HEAD section -->
+
+     <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+     <script src="js/jquery-1.11.2.min.js"></script>
+     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/jquery.waypoints.min.js"></script>
+     <script src="js/acciones.js" type="text/javascript"></script>
+     <script src="phonegap.js" type="text/javascript"></script><!-- necesario*/ -->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head> 
+
+
+
+
+
+<body onLoad="MM_preloadImages('imagenes/ejemploEspacios1.png','imagenes/ejemploEspacios2.png','imagenes/ejemploHead.png','imagenes/ejemploHeader1.jpeg','imagenes/ejemploFooter1.jpeg','imagenes/cssAntesDespues.png','imagenes/sintaxisCss.png')">
+<!--//_______Pagina principal_______//-->
+<div data-role="page" id="Inicio" data-theme="a">
+
+     <!--Encabezado pagina principal-->
+     <div data-role="header">
+     <h1>App10 tutorial DAW</h1>
+     </div>
+
+     <!--Cuerpo-->
+     <div data-role="main">
+
+     <!--Botones listview-->
+     <div data-role="listview">
+     <li>
+     <a href="#page1" >
+     <h1>HTML</h1>
+     <p>Que es?, Etiquetas, Un elemento y sus tipos , Atributos , etc...</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page2" >
+     <h1>HTML lo viejo</h1>
+     <p>Etiquetas y atributos eliminados</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page3" >
+     <h1>HTML5</h1>
+     <p>header, nav, section, footer, form, inputs, etc...</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page4" >
+     <h1>1.-CSS</h1>
+     <p>Que es?, Sintaxis, Declaraciones, Estructura basica, Modelo de espacio</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page5" >
+     <h1>2.-CSS</h1>
+     <p>Selectores,PseudoClases para formularios</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page6" >
+     <h1>3.-CSS</h1>
+     <p>Propieda @font-face</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page7">
+     <h1>4.-CSS</h1>
+     <p>Prefijos y animaciones</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page8" >
+     <h1>5.-CSS</h1>
+     <p>El diseño responsivo y Media Queries(Sintaxis)</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page9" >
+     <h1>PHP(Inicios)</h1>
+     <p>Variables y Funciones</p>
+     </a>
+     </li>
+
+     <li>
+     <a href="#page10" >
+     <h1>Datos del desarrolador</h1>
+     <p>Nombre, Grupo, Semestre, Submodulo, Nombre del docente</p>
+     </a>
+     </li>
+
+     </div>
+
+     </div><!--Fin Cuerpo-->
+
+     <!--Footer pagina principal-->
+     <div data-role="footer" align="center" data-position="fixed">
+     <h5>App10 Jeser Martínez Grande / Tutorial DAW</h5>
+     <img src="res/android/mdpi.png" width="56" height="46" class="icono">
+     </div>
+</div><!--//_______Fin Pagina principal_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 1_______//-->
+<div data-role="page" id="page1" data-theme="a"> 
+
+     <!--Encabezado pagina1-->
+     <div data-role="header" id="pagHeader1">
+
+     <div class="menuFlotante">
+     <nav>
+     <ul class="main-nav js-main-nav" id="uno">
+     <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+     <li><a href="#QueEs" target="_self" class="vibrar">¿Qué es?</a></li>
+     <li><a href="#EvoPagina1" target="_self" class="vibrar">Evolución</a></li>
+     <li><a href="#pagEtiquetas" target="_self" class="vibrar">Etiquetas</a></li>
+     <li><a href="#pagElemntos" target="_self" class="vibrar">Elementos</a></li>
+     <li><a href="#pagTipoElementos" target="_self" class="vibrar">Tipos de Elementos</a></li>
+     <li><a href="#pagEspacios" target="_self" class="vibrar">Espacios</a></li>
+     <li><a href="#pagAtributos" target="_self" class="vibrar">Atributos</a></li>
+     <li><a href="#pagAtributosEstandar" target="_self" class="vibrar">Atributos estandar</a></li>
+     <li><a href="#pagComentarios" target="_self" class="vibrar">Comentarios</a></li>
+     <li><a href="#pagEstrucBasic" target="_self" class="vibrar">Estructura básica</a></li>
+     <li><a href="#pagDoctype" target="_self" class="vibrar">El DOCTYPE</a></li>
+     <li><a href="#pagHead" target="_self" class="vibrar">EL Head</a></li>
+     <li><a href="#pagBody" target="_self" class="vibrar">El Body</a></li>
+     <li><a href="#pagFooter1" target="_self" class="vibrar">Abajo</a></li>
+     <li><a href="#pagHeader1" target="_self" class="vibrar">Arriba</a></li>
+     </ul>
+     <a class="mobile-nav-icon js-mobile-nav-icon">
+     <i class="ion-navicon-round"></i>
+     </a>
+     </nav>
+     </div>
+
+     <h1>HTML</h1>
+
+     </div>
+
+
+
+     <!--Cuerpo-->
+
+     <div data-role="main">
+
+     <div class="Paginas"><!--Paginas-->
+
+     <div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+
+<!--Que es?-->
+<div id="QueEs"> 
+
+
+<h2>¿Qué significa HTML?</h2>
+<div>
+<img src="imagenes/pagina1HTML.png" id="pagina1HTML">
+</div>
+<div id="tablaQues">
+<table id="tabQues">
+<tr>
+<th>H</th><td>yper</td>
+</tr>
+<tr>
+<th>T</th><td>ext</td>
+</tr>
+<tr>
+<th>M</th><td>arkup</td>
+</tr>
+<tr>
+<th>L</th><td>anguange</td>
+</tr>
+</table>
+</div>
+
+
+</div>
+
+<hr>
+
+<!--Evolucuion-->
+<div>
+
+
+<h2 id="EvoPagina1">Evolución</h2>
+<div id="historiaHTML">
+<p>
+Esta es la historia de como fue cambiando la creacion de paginas Web
+<br>
+Paginas estaticas: HTML+,HTML2.0,HTML3.2
+<br>
+Paginas dinamicas: HTML4.0+,HTML4.01
+<br>
+Paginas WEB: HTML+,HTML5,CSS3,JavaScript
+</p>
+</div>
+
+<div class="masInformacion">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li >
+<a href="https://youtu.be/DXnpfJkjtI8i" data-role="button" target="_self">Mas información en video</a>
+</li>
+</ul>
+</div>
+
+
+</div>
+
+<hr>
+
+<!--Etiquetas-->
+<div>
+
+
+<div id="pagEtiquetas">
+<h2>Etiquetas</h2>
+<p>El código en HTML está formado por un conjunto  de etiquetas (tags).
+<br>
+El navegador interpreta estas etiquetas al momento de cargar la página.
+<br><br></p>
+<p class="E1">Simbolos:&nbsp;&nbsp;</p><pre class="E2">&lt;&gt;</pre>
+<br>
+<p class="E1">Estrutura Basica:&nbsp;&nbsp;</p><pre class="E2">&lt;Nombre de la etiqueta&gt; </pre>
+<br><br>
+<p>La mayoría de las etiquetas vienen en pares,  es decir:
+<br>
+Etiqueta Apertura y Etiqueta Cierre (contienen una diagonal /)
+<br></p>
+<p class="E1">De esta manera: </p><pre class="E2">&lt;EtiquetaApertura&gt;Contenido&lt;EtiquetaCierre/&gt;</pre>
+<p>
+Y otras que solo tienen la etiqueta de apertura
+</p>
+<p class="E1" style="float: left;">Ejemplos: </p><pre class="E2"> &lt;img&gt; 
+ &lt;input&gt;
+ &lt;br&gt;</pre>
+</div>
+
+
+</div>
+
+<hr>
+
+
+<!--Elemento y tipos-->
+<div>
+
+
+<h2 id="pagElemntos">Elementos</h2>
+<p>
+Las etiquetas junto con su contenido, forman un elemento HTML.
+<br>
+</p> 
+<p class="E1">Ejemplo:&nbsp;</p><pre class="E2">&lt;h3&gt;Ejemplo de elemento&lt;h3&gt;</pre>
+<p> 
+Esto nos da como resultado lo siguiente:
+<br><br>
+<div id="ejemploElemento"><h3>Ejemplo de elemento</h3></div>
+</p>
+
+<hr>
+
+<h2 id="pagTipoElementos">Tipos de elementos</h2>
+<p>
+Todos los elemetos se pueden dividir en dos tipos basicos:En linea y en bloque
+<br><br>
+En Bloque
+<br>
+Un elemento en bloque es aquel que contiene un bloque significativo de contenido que debería mostrarse en su propia línea.Por ejemplo: párrafos, tablas,  listas
+<br><br>
+En Linea
+<br>
+Los elementos en línea usualmente contienen menos texto y se muestra junto a otro texto en la misma línea, cómo cuando se enfatizan palabras en una oración
+</p>
+<br>
+
+<div data-role="collapsible">
+<h1>Ejemplos</h1>
+<div id="enBloque" class="elemtosAlineados">
+<p>En Bloque</p>
+<div class="bloques">1</div>
+<div class="bloques">2</div>
+<div class="bloques">3</div>
+</div>
+<div id="enLinea" class="elemtosAlineados">
+<p>En Linea</p>
+<div class="bloques">1</div>
+<div class="bloques">2</div>
+<div class="bloques">3</div>
+</div>
+</div> 
+
+
+</div>
+
+<hr>
+
+<!--Espacios-->
+<div>
+
+
+<h2 id="pagEspacios">Espacios</h2> 
+<p>
+Los saltos de línea se ignoran.
+<br>
+Varios espacios en blanco consecutivos  se convierten en uno solo
+<br><br>
+<strong>Ejemplo:</strong>
+<br>
+Si escribo esto
+</p>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image99','','imagenes/ejemploEspacios1.png',1)"><img src="imagenes/susti1.png" width="300" height="168" id="Image99"></a>
+
+<p>El resultado es el siguiente:</p>
+<strong>"jaja xd xd"</strong>
+<br><br>
+<p class="E1">Pero si le agrego 3</p><pre class="E2"> &lt;br&gt;</pre>
+<p>
+De esta manera
+</p>
+
+
+
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('asd','','imagenes/ejemploEspacios2.png',1)"><img src="imagenes/susti1.png" width="300" height="168" id="asd"></a>
+<div data-role="collapsible">
+  <h1>Más ejemplos</h1>
+<p>Con estas otras formas va a dar el mismo resultado</p>
+<img src="imagenes/ejemploEspacios3.png">
+<img src="imagenes/ejemploEspacios4.png">
+<img src="imagenes/ejemploEspacios5.png">
+<img src="imagenes/ejemploEspacios6.png">
+</div>
+<p>
+El resultado será:
+</p>
+<strong>"jaja<br><br><br>xd xd"</strong><br><br>
+<p class="E1">En conclusion poner un</p><pre class="E2"> &lt;br&gt; </pre><p class="E2">es igual a un salto</p>
+
+
+</div>
+
+<hr>
+
+<!--Atributos y atributos estandar-->
+<div>
+
+
+<h2 id="pagAtributos">Atributos</h2>
+<p>
+La etiqueta de apertura de un elemento puede  uno o varios atributos que proporcionan más  información sobre el elemento
+<br><br>
+<strong>Ejemplo:</strong>
+<br>
+</p>
+<pre>&lt;p class=“mensaje”&gt; Hola Mundo &lt;p/&gt;</pre>
+<br>
+<p>
+En este caso [class="mesaje"] es el Atributo
+</p>
+
+<hr>
+
+<h2 id="pagAtributosEstandar">Atributos estandar</h2>
+<p>Este tipo de atributos son los siguientes</p><br>
+<h4>1.-class</h4>
+<p>Indica la clase a la cual un elemento pertenece. Cualquier número de elementos pueden pertenecer a una clase. Un solo elemento puede pertenecer a muchas clases</p><br>
+<h4>2.-style</h4>
+<p>Especifica propiedades CSS de un elemento</p><br>
+<h4>3.-id</h4>
+<p>Especifica un identificador único para un elemento</p>
+
+
+</div>
+
+<hr>
+
+<!--Comentarios-->
+<div>
+     
+
+<div id="pagComentarios">
+<h2>Comentarios</h2>
+<p>Los comentarios en HTML son notas que no se muestran en el navegador y que se pueden leer revisando el código fuente
+<br><br>
+<strong>Ejemplo:</strong>
+</p>
+<pre>&lt;!--Este es un Comentario--&gt;</pre>
+</div>
+
+<hr>
+
+<!--Estructura basica-->
+<div id="pagEstrucBasic">
+<h2>Estructura basica</h2>
+<p>Esta es la estructura basica de un archivo HTML</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt; >
+&nbsp;&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Mi primera página Web&lt;/title&gt;
+&nbsp;&nbsp;&lt;/head&gt;
+&nbsp;&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+
+</div>
+
+<hr>
+
+<!--DOCTYPE-->
+<div>
+     
+
+<h2 id="pagDoctype">El famoso DOCTYPE</h2>
+<p>Antes:</p>
+<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0Strict
+//EN"http://www.w3.org/TR/xhtml1/DTD/
+xhtml1strict.dtd"&gt;
+</pre>
+<br>
+<p>Y Ahora</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+</pre>
+
+
+</div>
+
+<hr>
+
+<!--Head-->
+<div>
+
+
+<h2 id="pagHead">El Head</h2>
+<p>
+El elemento head contiene información sobre  el documento HTML, incluyendo palabras clave, enlaces a otros documentos que usa  como archivos CSS y JavaScript
+<br>
+A excepción del elemento "title" que se muestra en la barra de título del navegador, ningún otr elemento se muestra en el contenido de la página  HTML
+<br><br>
+<strong>Ejemplo:</strong>
+</p>
+
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('muymyu','','imagenes/ejemploHead.png',1)"><img src="imagenes/susti1.png" width="300" height="168" id="muymyu"></a> 
+
+<br>
+<p>Los elementos de head son los siguietes</p>
+<strong>&lt;title&gt;:</strong><p>Permite agregar un título a un
+documento HTML, se muestran en la barra de  título de los navegadores y se usa como  valor por default cuando se marca una  página como favorita.</p><br>
+<strong>&lt;link&gt;:</strong><p>
+define las relaciones entre dos  documentos. Su uso más frecuente es para  referirse a las hojas de estilo que usa el  documento.
+<br>
+Ejemplo:
+<br>&lt;link rel="stylesheet" type="text/css" href="main.css" media="screen" /&gt;</p><br>
+<strong>&lt;meta&gt;:</strong><p> El término meta se refiere a metadatos. Su uso más común es para  describir información sobre la descripción y  palabras clave del documento, y el tipo de  codificación.</p><br>
+<strong>&lt;meta&gt;:</strong><p>Permite integrar lenguajes de scripting en un documento HTML.
+<br>
+Ejemplo
+<br>&lt;script type= “text/javascript” src=“js/miscript.js”&gt;&lt;/script&gt;</p>
+
+
+</div>
+
+<hr>
+
+<!--Body-->
+<div>
+
+
+<h2 id="pagBody">El Body</h2>
+<p>Todo el contenido de un documento HTML se  encuentra en el elemento body.<br>El elemento body va después del elemento head  y debe cerrarse antes de la etiqueta de cierre del elemento html.</p>
+<br>
+<strong>Etiquetas mas usadas en el body</strong>
+<table border="1px">
+<tr>
+<th>P</th><td>Sirve para delimitar párrafos.</td>
+</tr>
+<tr>
+<th>h1...h6</th><td>Sirven como títulos y separan las diferentes secciones de  contenido de un documento.</td>
+</tr>
+<tr>
+<th>pre</th><td>El elemento pre define un bloque pre formateado donde el texto  se muestra tal cual está en el código fuente.</td>
+</tr>
+<tr>
+<th>hr</th><td>Crea una línea horizontal que sirve para dividir secciones de  texto.</td>
+</tr>
+<tr>
+<th>em</th><td>Se usa para agregar énfasis a una palabra o frase</td>
+</tr>
+<tr>
+<th>a</th><td>Define un enlace (link), utilizando el atributo “href” donde se  colocará el enlace.</td>
+</tr>
+<tr>
+<th>div</th><td>Crea una división en un documento agrupando diferentes elementos  y es semánticamente neutral.</td>
+</tr>
+<tr>
+<th>span</th><td>Es la versión en línea de un &lt;div&gt;.</td>
+</tr>
+<tr>
+<th>addres</th><td>Sirve para definir la información de contacto del autor de la página.</td>
+</tr>
+<tr>
+<th>br</th><td>Se utiliza para realizar un salto de línea.</td>
+</tr>
+<tr>
+<th>img</th><td>Sirve para incluir imágenes en un documento HTML. Requiere del  atributo “src” donde se coloca la URL de la imagen.</td>
+</tr>
+<tr>
+<th colspan = "2px">Etiquetas de listas</th>
+</tr>
+<tr>
+<th>ul</th><td>Define una lista no ordenada.</td>
+</tr>
+<tr>
+<th>ol</th><td>Define una lista ordenada.</td>
+</tr>
+<tr>
+<th>li</th><td>Es el elemento de una lista.</td>
+</tr>
+<tr>
+<th>dl</th><td>Define una lista de definiciones.</td>
+</tr>
+<tr>
+<th>dt</th><td>Es el elemento que será definido.</td>
+</tr>
+<tr>
+<th>dd</th><td>Contiene la descripción del elemento que está en la etiqueta  “dt”.</td>
+</tr>
+<tr>
+<th colspan = "2px">Etiquetas de tablas</th>
+</tr>
+<tr>
+<th>table</th><td>Elemento para crear una tabla.</td>
+</tr>
+<tr>
+<th>thead</th><td>Encabezado de la tabla.</td>
+</tr>
+<tr>
+<th>tbody</th><td>Cuerpo de la tabla.</td>
+</tr>
+<tr>
+<th>tfoot</th><td>Pie de la tabla.</td>
+</tr>
+<tr>
+<th>tr</th><td>Define una “fila” de la tabla.</td>
+</tr>
+<tr>
+<th>th</th><td>Define un encabezado en la tabla.</td>
+</tr>
+<tr>
+<th>td</th><td>Define un dato (celda) dentro de la tabla.</td>
+</tr>
+<tr>
+<th colspan = "2px">Atributos de tablas</th>
+</tr>
+<tr>
+<th>colspan</th><td>Número de columnas que la celda debe ocupar.</td>
+</tr>
+<tr>
+<th>Rowspan</th><td>Número de filas que la celda debe ocupar.</td>
+</tr>
+</table>
+
+
+</div>
+
+</div><!--Fin Paginas-->
+
+
+<div class="Derecha">
+<a href="#page2" data-transition="slide">
+<div  style="width: 0%; height: 4800px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#Inicio" data-transition="flip">
+<div  style="width: 0%; height: 4800px;"></div></a>   
+</div>
+
+<div class="Abajo" id="pagFooter1">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina1-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina1_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 2_______//-->
+<div data-role="page" id="page2" data-theme="a"> 
+
+<!--Encabezado pagina2-->
+<div data-role="header" id="pagHeader2">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#tablaEtiquetas" target="_self" class="vibrar">Etiquetas despreciadas</a></li>
+          <li><a href="#tablaAtributos" target="_self" class="vibrar">Atributos depreciados</a></li>
+          <li><a href="#pagFooter2" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader2" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>HTML lo viejo</h1>
+</div>
+
+<!--Cuerpo-->
+<div data-role="main">
+
+<div class="Paginas"><!--Paginas-->
+
+	<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+
+<!--Cosas viejas-->
+    <div>
+       <h2 id="tablaEtiquetas">Etiquetas Depreciadas</h2>
+       <p>Los siguientes elementos ya no se encuentran disponibles para HTML5 y ahora sufuncionalidad es manejada mediante CSS </p>
+       <br>
+        <table border="1px">
+        <tr>
+          <th>Tags (Elementos)</th><th>Descripción (Define)</th>
+        </tr>
+        <tr>
+          <th>&lt;acronym&gt;</th><td>un acrónimo</td>
+        </tr>
+        <tr>
+          <th>&lt;applet&gt;</th><td>un “applet”</td>
+        </tr>
+        <tr>
+          <th>&lt;basefont&gt;</th><td>una base fuente para la pagina</td>
+        </tr>
+        <tr>
+          <th>&lt;big&gt;</th><td>un texto grande</td>
+        </tr>
+        <tr>
+          <th>&lt;center&gt;</th><td>un texto centrado</td>
+        </tr>
+        <tr>
+          <th>&lt;dir&gt;</th><td>una lista directorio</td>
+        </tr>
+        <tr>
+          <th>&lt;font&gt;</th><td>la fuente, tamaño y color de un texto</td>
+        </tr>
+        <tr>
+          <th>&lt;frame&gt;</th><td>un “frame”</td>
+        </tr>
+        <tr>
+          <th>&lt;frameset&gt;</th><td>un conjunto de “frames”</td>
+        </tr>
+        <tr>
+          <th>&lt;isindex&gt;</th><td>un input de una sola línea</td>
+        </tr>
+        <tr>
+          <th>&lt;marquee&gt;</th><td>una marquesina (texto en movimiento)</td>
+        </tr>
+        <tr>
+          <th>&lt;noframes&gt;</th><td>una sección sin “frames”</td>
+        </tr>
+        <tr>
+          <th>&lt;s&gt;</th><td>un texto tachado</td>
+        </tr>
+        <tr>
+          <th>&lt;strike&gt;</th><td>un texto tachado</td>
+        </tr>
+        <tr>
+          <th>&lt;tt&gt;</th><td>texto de teletipo (entrada de teclado)</td>
+        </tr>
+        <tr>
+          <th>&lt;u&gt;</th><td>un texto subrayado</td>
+        </tr>
+        <tr>
+         <th>table</th><td>Elemento para crear una tabla.</td>
+        </tr>
+       </table>
+       <hr>
+       <h2 id="tablaAtributos">Atributos Depreciados</h2>
+       <p>HTML5 no cuenta con atributos de presentación que utilizaba HTML4, ahora sufuncionalidad se logra a través del uso de CSS.Algunos atributos de HTML4 ya no sonpermitidos en HTML5 y otros han sido removidos completamente.A continuación, se muestra.una tabla con los atributos removidos y la correspondiente etiqueta (elemento) que se ve afectada. </p>
+       <br>
+        <table border="1px">
+        <tr>
+          <th>Atributo Removido</th><th>Del elemento (etiqueta)</th>
+        </tr>
+        <tr>
+          <th>rev</th><td>link, a</td>
+        </tr>
+        <tr>
+          <th>charset</th><td>link and a</td>
+        </tr>
+        <tr>
+          <th>shape</th><td>a</td>
+        </tr>
+        <tr>
+          <th>coords</th><td>a</td>
+        </tr>
+        <tr>
+          <th>longdesc</th><td>img and iframe.</td>
+        </tr>
+        <tr>
+          <th>target</th><td>link</td>
+        </tr>
+        <tr>
+          <th>nohref</th><td>area</td>
+        </tr>
+        <tr>
+          <th>profile</th><td>head</td>
+        </tr>
+        <tr>
+          <th>version</th><td>html</td>
+        </tr>
+        <tr>
+          <th>name</th><td>img</td>
+        </tr>
+        <tr>
+          <th>scheme</th><td>meta</td>
+        </tr>
+        <tr>
+          <th>archive</th><td>object</td>
+        </tr>
+        <tr>
+          <th>classid</th><td>object</td>
+        </tr>
+        <tr>
+          <th>codebase</th><td>object</td>
+        </tr>
+        <tr>
+          <th>codetype</th><td>object</td>
+        </tr>
+        <tr>
+          <th>declare</th><td>object</td>
+        </tr>
+        <tr>
+          <th>standby</th><td>object</td>
+        </tr>
+        <tr>
+          <th>valuetype</th><td>param</td>
+        </tr>
+        <tr>
+          <th>type</th><td>param</td>
+        </tr>
+        <tr>
+          <th>axis</th><td>td and t</td>
+        </tr>
+        <tr>
+          <th>abbr</th><td>td and t</td>
+        </tr>
+        <tr>
+          <th>scope</th><td>td</td>
+        </tr>
+        <tr>
+          <th>align</th><td>caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3,h4, h5, h6, p, col, colgroup,tbody, td, tfoot, th, thead and tr.</td>
+        </tr>
+        <tr>
+          <th>alink</th><td>body</td>
+        </tr>
+        <tr>
+          <th>link</th><td>body</td>
+        </tr>
+        <tr>
+          <th>vlink</th><td>body</td>
+        </tr>
+        <tr>
+          <th>text</th><td>body</td>
+        </tr>
+        <tr>
+          <th>background</th><td>body</td>
+        </tr>
+        <tr>
+          <th>bgcolor</th><td>table, tr, td, th and body.</td>
+        </tr>
+        <tr>
+          <th>border</th><td>table and object.</td>
+        </tr>
+        <tr>
+          <th>cellpadding</th><td>table</td>
+        </tr>
+        <tr>
+          <th>cellspacing</th><td>table</td>
+        </tr>
+        <tr>
+          <th>char</th><td>col, colgroup, tbody, td, tfoot, th, thead and tr.</td>
+        </tr>
+        <tr>
+          <th>charoff</th><td>col, colgroup, tbody, td, tfoot, th, thead and tr.</td>
+        </tr>
+        <tr>
+          <th>clear</th><td>br</td>
+        </tr>
+        <tr>
+          <th>compact</th><td>dl, menu, ol and ul.</td>
+        </tr>
+        <tr>
+          <th>frame</th><td>table</td>
+        </tr>
+        <tr>
+          <th>frameborder</th><td>iframe</td>
+        </tr>
+        <tr>
+          <th>hspace</th><td>img and object.</td>
+        </tr>
+        <tr>
+          <th>vspace</th><td>img and object.</td>
+        </tr>
+        <tr>
+          <th>marginheight</th><td>iframe</td>
+        </tr>
+        <tr>
+          <th>marginwidth</th><td>iframe</td>
+        </tr>
+        <tr>
+          <th>noshade</th><td>hr</td>
+        </tr>
+        <tr>
+          <th>nowrap</th><td>td and th</td>
+        </tr>
+        <tr>
+          <th>rules</th><td>table</td>
+        </tr>
+        <tr>
+          <th>scrolling</th><td>iframe</td>
+        </tr>
+        <tr>
+          <th>size</th><td>hr</td>
+        </tr>
+        <tr>
+          <th>type</th><td>li, ol and ul.</td>
+        </tr>
+        <tr>
+          <th>valign</th><td>col, colgroup, tbody, td, tfoot, th, thead and tr</td>
+        </tr>
+        <tr>
+          <th>width</th><td>hr, table, td, th, col, colgroup and pre.</td>
+        </tr>
+       </table>
+
+    </div>
+
+</div><!--Fin Paginas-->
+
+<div class="Derecha">
+<a href="#page3" data-transition="slide" >
+<div  style="width: 0%; height: 2000px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page1" data-transition="slidefade" >
+<div  style="width: 0%; height: 2000px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter2">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina2-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina2_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 3_______//-->
+<div data-role="page" id="page3" data-theme="a"> 
+
+<!--Encabezado pagina3-->
+<div data-role="header" id="pagHeader3">
+
+<div class="menuFlotante">
+<nav>
+<ul class="main-nav js-main-nav">
+<li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+<li><a href="#pagDatos" target="_self" class="vibrar">Dato</a></li>
+<li><a href="#pagiHeader" target="_self" class="vibrar">Header</a></li>
+<li><a href="#pagHgroup" target="_self" class="vibrar">hgroup</a></li>
+<li><a href="#pagSection" target="_self" class="vibrar">Section</a></li>
+<li><a href="#pagNav" target="_self" class="vibrar">nav</a></li>
+<li><a href="#pagFooter" target="_self" class="vibrar">Footer</a></li>
+<li><a href="#pagForm" target="_self" class="vibrar">Formulario</a></li>
+<li><a href="#pagInputs" target="_self" class="vibrar">Tipos de input</a></li>
+<li><a href="#pagInputsAtributos" target="_self" class="vibrar">Atributos de Inputs</a></li>
+<li><a href="#pagFooter3" target="_self" class="vibrar">Abajo</a></li>
+<li><a href="#pagHeader3" target="_self" class="vibrar">Arriba</a></li>
+</ul>
+<a class="mobile-nav-icon js-mobile-nav-icon">
+<i class="ion-navicon-round"></i>
+</a>
+</nav>
+</div>
+<h1>HTML 5</h1>
+</div>
+
+<!--Cuerpo-->
+<div data-role="main">
+
+<div class="Paginas"><!--Paginas-->
+
+	<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+    <!--Datos de HTML5-->
+    <div>
+
+
+    <h2 id="pagDatos">Dato</h2>
+    <p>HTML5 no es una reformulación de versiones previas.<br>
+    Incluye la redefinición de elementos, la inclusión de nuevos elementos e incluye el uso de nuevas tecnologías como video, audio y canvas.
+    </p><br>
+<div id="pagEjmplosTec">
+  <div>
+   <strong>Un ejemplo de Video</strong>
+   <br>
+   <video width="300" height="auto" controls> <source src="imagenes/video1.mp4" type="video/mp4"></video>
+  </div>
+
+<br>
+
+<div>
+  <strong>Un ejemplo de audio</strong>
+  <br>
+  <audio controls><source src="imagenes/audio1.mp3" type="audio/mpeg"></audio>
+</div>
+
+<br>
+
+  <strong>Un ejemplo de Canvas</strong>
+  <br>
+  <canvas id="miCanvas" width="300" height="400" style="border: 1px solid black"></canvas>
+
+          <div data-role="collapsible">
+          <h1>Código</h1>
+          <p>Código de HTML</p>
+          <img src="imagenes/canvasHTML.png">
+          <p>Código de JavaScript</p>
+          <img src="imagenes/canvasJava.png">
+         </div>
+</div>
+<div class="masInformacion">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li >
+<a href="http://videosws.praegnanz.de/" data-role="button" target="_self">Mas información 1</a>
+<a href=" http://mediaelementjs.com/" data-role="button" target="_self">Mas información 2</a>
+</li>
+</ul>
+</div>
+
+
+</div>
+
+<hr>
+
+<!--haedaer-->
+   <div>
+
+
+     <h2 id="pagiHeader">Etiqueta Header</h2>
+     <p>Este elemento usualmente contiene el título de una sección, puede usarse para delimitar un índice de contenido, logos, etc…
+     </p>
+     <br>
+     <strong>Ejemplo</strong>
+     <p>Código</p>
+     
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('abhdfh','','imagenes/ejemploHeader1.jpeg',1)"><img src="imagenes/susti1.png" width="300" height="168" id="abhdfh"></a>      <br><br>
+     <p>Vista</p>
+     <img src="imagenes/ejemploHeader2.jpeg">
+
+
+   </div>
+
+<hr>
+
+   <!--hgroups-->
+   <div>
+
+
+     <h2 id="pagHgroup">Etiqueta hgroup</h2>
+     <p>Varios headers necesitan múltiples títulos, como un blog que tiene un título y un subtítulo explicando el blog. &lt;hgroup&gt; permite colocar un h1, h2 y h3 “agrupados” sin afectar el SEO (Search Engine Optimization), permitiendo colocar otro h1 en la página web.</p>
+
+
+   </div>
+
+<hr>
+
+   <!--Navs-->
+   <div>
+
+
+     <h2 id="pagNav">Etiqueta Nav</h2>
+     <p>Se usa para delimitar una sección que contiene elementos de navegación para el sitio o página. Principalmente está  diseñado para que colocar los ‘botones’ de navegación del menú principal. Se puede colocar cualquier etiqueta dentro, aunque lo recomendado es usar listas "&lt;ul&gt;" y elementos "&lt;li&gt;".
+     </p>
+
+
+   </div>
+
+<hr>
+
+   <!--Section-->
+   <div>
+
+
+    <h2 id="pagSection">Etiqueta Section</h2>
+     <p>Es un conjunto de elementos relacionados que tienen algo en común, por lo cual merecen estar agrupados dentro de un mismo contenedor.En un video de youtube, habría un &lt;section&gt; para el video, uno para los datos del video, otro para la zona de comentarios.
+     </p>
+
+
+   </div>
+
+<hr>
+
+   <!--Footer-->
+   <div>
+
+
+    <h2 id="pagFooter">Etiqueta Footer</h2>
+     <p>Es el pie de página y todo lo que lo compone ,datos de autor, copyright, fecha de publicación, datos de contacto.
+     </p>
+     <br>
+     <strong>Ejemplo</strong>
+     <p>Código</p>
+     
+     
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hbgfd','','imagenes/ejemploFooter1.jpeg',1)"><img src="imagenes/susti1.png" width="300" height="168" id="hbgfd"></a> 
+     <br><br>
+     <p>Vista</p>
+     <img src="imagenes/ejemploFooter2.jpeg">
+
+
+   </div>
+
+<hr>
+
+   <!--Form-->
+   <div>
+
+
+    <h2 id="pagForm">Formulario</h2>
+     <p>Un formulario permite a un usuario ingresar  datos.<br>
+      La información que se ingresa se manda a un  servidor en un grupo de datos que consisten  del nombre de los elementos y sus valores.<br>Para hacer uso de un formulario,  utilizaremos las etiquetas: &lt;form&gt; &lt;/form&gt;<br> Requiere de los atributos action y method,  los cuales son la URL del form-handler y el  método HTTP por el cual se envían los  datos, respectivamente.
+     </p>
+     
+
+   </div>
+
+<hr>
+
+   <!--Inputs-->
+   <div>
+
+
+    <h2 id="pagInputs">Tipos de Input</h2>
+    <div id="tablaInputs">
+    <table border="1px">
+        <tr>
+          <th>Input</th><th>Define (un, una ,etc...)</th>
+        </tr>
+    </table>	
+    <table border="1px">
+        <tr>
+          <th>text:</th><td>Una línea de texto</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="text">
+ 
+     <hr class="tablaEspa">
+    
+    <table border="1px">
+        <tr>
+          <th>password:</th><td>Una línea de texto, con los caracteres enmascarados.</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="password">
+
+     <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>date:</th><td>Un control para seleccionar una fecha.</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="date">
+
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>time:</th><td>Un control para seleccionar una hora</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="time">
+
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>color:</th><td>Un control para seleccionar un color</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="color" >
+
+     <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>range:</th><td>Un control para seleccionar un valor numérico.  Parecido a un slider.</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="range" min="0" max="10">
+
+      <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>number:</th><td>Un control para seleccionar un número.</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="number">
+
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>checkbox:</th><td>Un checkbox (Una cajita)</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <div style="display: inline-block;">
+    <input type="checkbox"><br>
+    </div>
+
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>email:</th><td>Un control especial para email.</td>
+        </tr>
+    </table>
+    <strong>Ejemplo: </strong> 
+    <input type="email">
+
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>hidden:</th><td>Un input escondido</td>
+        </tr>
+    </table>
+    
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>file:</th><td>Un control para seleccionar un archivo</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <input type="file">
+
+    <hr class="tablaEspa">
+
+    <table border="1px">
+        <tr>
+          <th>radio:</th><td>;Un radio button (Un circulito)</td>
+        </tr>
+    </table>
+    <br>
+    <strong>Ejemplo: </strong> 
+    <div style="display: inline-block;">
+    <input type="radio">	
+    </div>
+    <br>
+    </div>
+
+  <hr>
+<h2 id="pagInputsAtributos">Atributos de Inputs</h2>
+    <table border="1px">
+        <tr>
+          <th>placeholder:</th><td>Pone dentro del input, el texto como marca de agua</td>
+        </tr>
+        <tr>
+          <th>autocomplete:</th><td>On/Off. Define si se permite autocompletado o no.</td>
+        </tr>
+        <tr>
+          <th>rautofocus:</th><td>Pone directamente el cursor sobre él al cargar la página.  NOTA: Solamente un autofocus por formulario.</td>
+        </tr>
+        <tr>
+          <th>min - max:</th><td>Usado para inputs numéricos, definen un valor mínimo y máximo</td>
+        </tr>
+        <tr>
+          <th>step:</th><td>Usado para inputs numéricos, definen el salto de números.  Ejemplo: step=”5” saltará de 5 en 5.</td>
+        </tr>
+        <tr>
+          <th>required:</th><td>Define si el campo es requerido para poder enviar el formulario.</td>
+        </tr>
+        <tr>
+          <th>pattern:</th><td>Define un patrón a seguir dentro del input.</td>
+        </tr>
+    </table>
+    <hr>
+
+<h2>Ejemplo de un datalist</h2>
+     
+<datalist id="miLista">
+<option> México </option>
+<option> USA </option>
+<option> Canadá </option>
+</datalist>
+<label for="pais">Tu País… </label>
+<input type="text" id="pais" list="miLista">
+
+
+   </div>
+
+</div><!--Fin Paginas-->
+
+<div class="Derecha">
+<a href="#page4" data-transition="slide" >
+<div  style="width: 0%; height: 4325px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page2" data-transition="slidefade" >
+<div  style="width: 0%; height: 4325px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter3">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+</div><!--Fin Cuerpo-->
+<!--Footer pagina3-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4 >App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina3_______//-->
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 4_______//-->
+<div data-role="page" id="page4" data-theme="a"> 
+
+<!--Encabezado pagina4-->
+<div data-role="header" id="pagHeader4">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#pagQueEsCss" target="_self" class="vibrar">¿Qué es?</a></li>
+          <li><a href="#pagEvolucionCss" target="_self" class="vibrar">Evolución</a></li>
+          <li><a href="#pagAgregarHojaCss" target="_self" class="vibrar">Agregar ojas de estilo</a></li>
+          <li><a href="#pagSintaxCss" target="_self" class="vibrar">Sintaxis</a></li>
+          <li><a href="#pagDeclaraciones" target="_self" class="vibrar">Declaraciones</a></li>
+          <li><a href="#pagEstrucBasicCss" target="_self" class="vibrar">Estructura basica</a></li>
+          <li><a href="#pagModeloEspacio" target="_self" class="vibrar">Modelo de espacio</a></li>
+          <li><a href="#pagFooter4" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader4" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>1.-CSS</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+<!--Que es?-->
+<div>
+<h2 id="pagQueEsCss">¿Qué es?</h2>
+<p>Cascading Style Sheets (CSS) ‘Hoja de estilo en cascada’ es un lenguaje usado para definir y crear la presentación de un documento estructurado escrito en HTML.</p>
+<img src="imagenes/pagina4CSS.png" id="pagina4CSS">
+</div>
+
+<hr>
+
+<!--Evolucion-->
+<div id="pagEvolucionCss">
+<h2>Evolución</h2>	
+<p>El organismo W3C (World Wide Web Consortium),  encargado de crear todos los estándares  relacionados con la web, propuso la creación de  un lenguaje de hojas de estilos específico para el lenguaje HTML
+</p>
+    <table>
+        <tr>
+          <th>Fecha</th><th>Nivel</th>
+        </tr>
+        <tr>
+          <th>1996</th><td>1</td>
+        </tr>
+        <tr>
+          <th>1998</th><td>2</td>
+        </tr>
+        <tr>
+          <th>2011</th><td>2.1</td>
+        </tr>
+        <tr>
+          <th>2012</th><td>3</td>
+        </tr>
+    </table>
+
+
+
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fghrt','','imagenes/cssAntesDespues.png',1)"><img src="imagenes/susti2.jpg" width="100% " id="fghrt"></a>
+</div>
+
+<hr>
+
+<!--Agregar hojas de estilo-->
+<div id="pagAgregarHojaCss">
+<h2>Agregar hojas de estilo</h2>
+<p>Existen tres formas de instertar CSS</p>	
+<br>
+<strong>1.-Estilo externo</strong>
+<p>"nombre_archivo.css"</p>
+<strong>2.-Estilo interno</strong>
+<pre>&lt;style&gt;h1 {color: red;} &lt;/style&gt;</pre>
+<strong>2.-Un estilo en la linea html (inline)</strong>
+<pre>&lt;p style="color:red; margin-left:20px"&gt;
+Un parrafo&lt;/p&gt;</pre>
+
+         <div data-role="collapsible">
+          <h1>Ejemplos</h1>
+          <strong>1.-Estilo externo</strong>
+          <p>Archivo externo</p>
+          <img src="imagenes/archivoEx.jpeg">
+          <p>Código</p>
+          <img src="imagenes/codigoEx.jpeg">
+          <br>
+          <strong>2.-Estilo interno</strong>
+          <img src="imagenes/ejemploCssIn.jpeg">
+          <p>Resultado</p>
+          <img src="imagenes/resultadoCssIn.jpeg">
+          <br>
+          <strong>3.-Estilo en la linea html (inline)</strong>
+          <img src="imagenes/ejemploCssLinea.jpeg">
+          <p>Resultado</p>
+          <img src="imagenes/resultadoCssLinea.jpeg">
+         </div>
+</div>
+
+<hr>
+
+<!--Sintaxis-->
+<div id="pagSintaxCss">
+<h2>Sintaxis</h2>
+<p>CSS tiene una sintaxis sencilla, que usa palabras clave (inglés) para especificar los nombres de las propiedades y la mayoría de los valores.<br>
+Se especifica el elemento o elementos a aplicar el estilo (se pueden usar etiquetas, id o clases separadas o se pueden apilar)<br>
+Vienen en pares de nombre/valor: name:value;
+Cada línea terminan con ";"</p>
+<strong>Ejemplo: </strong>
+
+
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ghngh','','imagenes/sintaxisCss.png',1)"><img src="imagenes/susti2.jpg" width="100%" id="ghngh"></a>
+</div>
+<strong>Comentarios</strong>
+<pre>/*Esto es un comentario en CSS*/</pre>
+
+<hr>
+
+
+<!--Declaraciones-->
+<div id="pagDeclaraciones">
+<h2>Declaraciones</h2>	
+<p>Una declaración es un par "propiedad y valor"  que definen la apariencia visual de un  elemento HTML.</p>
+<table>
+<tr>
+	<th>Propiedad</th><td>Característica que modifica  al elemento seleccionado</td>
+</tr>
+<tr>
+	<th>Valor</th><td>Establece el nuevo valor para la  propiedad a modificar.</td>
+</tr>
+</table>
+<img src="imagenes/declaracionesCss.jpeg">
+
+</div>
+
+<hr>
+
+<!--Estructura basica-->
+<div id="pagEstrucBasicCss">
+<h2>Estructura basica</h2>	
+
+          <div data-role="collapsible">
+           <h1>Estructura</h1>
+          <img src="imagenes/estructuraBasica1.jpeg">
+          <img src="imagenes/estructuraBasica2.jpeg">
+          <img src="imagenes/estructuraBasica3.jpeg">
+         </div>
+</div>
+
+<hr>
+
+<!--Modelo de espacio-->
+<div id="pagModeloEspacio">
+<h2>Modelo de espacio</h2>	
+</div>
+
+     <div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+          <li><img src="data1/images/espacios.png" alt="Modelo de espacio" title="Modelo de espacio" id="wows1_0"/></li>
+          <li><img src="data1/images/codigomargin.jpg" alt="Codigo Margin" title="Codigo Margin" id="wows1_1"/></li>
+          <li><img src="data1/images/resmargin.jpg" alt="Resultado" title="Resultado" id="wows1_2"/></li>
+          <li><img src="data1/images/codigopadding.jpg" alt="Codigo Padding" title="Codigo Padding" id="wows1_3"/></li>
+          <li><img src="data1/images/respadding.jpg" alt="Resultado" title="Resultado" id="wows1_4"/></li>
+          <li><img src="data1/images/codigoborde.jpg" alt="Codigo border" title="Codigo border" id="wows1_5"/></li>
+          <li><img src="data1/images/resborder.jpg" alt="Resultado" title="Resultado" id="wows1_6"/></li>
+          <li><a href="http://wowslider.net"><img src="data1/images/codigocontent.jpg" alt="wow slider" title="C odigo content" id="wows1_7"/></a></li>
+          <li><img src="data1/images/rescontent.jpg" alt="Resultado" title="Resultado" id="wows1_8"/></li>
+     </ul></div>
+     <div class="ws_bullets"><div>
+          <a href="#" title="Modelo de espacio"><span><img src="data1/tooltips/espacios.png" alt="Modelo de espacio"/>1</span></a>
+          <a href="#" title="Codigo Margin"><span><img src="data1/tooltips/codigomargin.jpg" alt="Codigo Margin"/>2</span></a>
+          <a href="#" title="Resultado"><span><img src="data1/tooltips/resmargin.jpg" alt="Resultado"/>3</span></a>
+          <a href="#" title="Codigo Padding"><span><img src="data1/tooltips/codigopadding.jpg" alt="Codigo Padding"/>4</span></a>
+          <a href="#" title="Resultado"><span><img src="data1/tooltips/respadding.jpg" alt="Resultado"/>5</span></a>
+          <a href="#" title="Codigo border"><span><img src="data1/tooltips/codigoborde.jpg" alt="Codigo border"/>6</span></a>
+          <a href="#" title="Resultado"><span><img src="data1/tooltips/resborder.jpg" alt="Resultado"/>7</span></a>
+          <a href="#" title="C odigo content"><span><img src="data1/tooltips/codigocontent.jpg" alt="C odigo content"/>8</span></a>
+          <a href="#" title="Resultado"><span><img src="data1/tooltips/rescontent.jpg" alt="Resultado"/>9</span></a>
+     </div></div><div class="ws_script" ><a href="http://wowslider.net">slideshow html code</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>    
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+
+
+
+</div>
+
+
+
+<div class="Derecha">
+<a href="#page5" data-transition="slide" >
+<div  style="width: 0%; height: 1500px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page3" data-transition="slidefade" >
+<div  style="width: 0%; height: 1500px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter4">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina4-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina4_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 5_______//-->
+<div data-role="page" id="page5" data-theme="a"> 
+
+<!--Encabezado pagina5-->
+<div data-role="header" id="pagHeader5">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav" id="dos">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#pagSelectores" target="_self" class="vibrar">Selectores</a></li>
+          <li><a href="#pagSelecUniversal" target="_self" class="vibrar">S. Universal</a></li>
+          <li><a href="#pagSelectEtiqueta" target="_self" class="vibrar">S.tipo Etiqueta</a></li>
+          <li><a href="#pagSelectClase" target="_self" class="vibrar">S.de Clase</a></li>
+          <li><a href="#pagSelectId" target="_self" class="vibrar">S. de ID</a></li>
+          <li><a href="#pagDifClaseId" target="_self" class="vibrar">Diferencia entre Clase e ID</a></li>
+          <li><a href="#pagSelectDesen" target="_self" class="vibrar">S. Descendiente</a></li>
+          <li><a href="#pagSelectHijo" target="_self" class="vibrar">S. de Hijo</a></li>
+          <li><a href="#pagSelectHermano" target="_self" class="vibrar">S. de Hermano</a></li>
+          <li><a href="#pagSelectHerDirec" target="_self" class="vibrar">S. de Hermano Directo</a></li>
+          <li><a href="#pagSelectHerGen" target="_self" class="vibrar">S. de Hermano General</a></li>
+          <li><a href="#pagAgruSelect" target="_self" class="vibrar">Agrupación de Selectores</a></li>
+          <li><a href="#pagPseudoClases" target="_self" class="vibrar">Pseudo-Clases</a></li>
+          <li><a href="#pagPseudoElement" target="_self" class="vibrar">Pseudo-Elementos</a></li>
+          <li><a href="#pagPseudoForm" target="_self" class="vibrar">Pseudo-Clases para Formularios</a></li>
+          <li><a href="#pagFooter5" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader5" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>2.-CSS</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+<!--Selectores-->
+<div>
+<h2 id="pagSelectores">Selectores</h2>
+<p>Definen que elementos HTML serán  afectados por las declaraciones
+<br>
+Existen varios tipos de selectores<br>
+Elementos<br>
+Clases<br>
+ID’s<br>
+Descendientes<br>
+Hijos<br>
+Adyacentes (hermanos o siblings), etc.</p>
+</div>
+
+<hr>
+
+<!--Selector Universal-->
+<div>
+<h2 id="pagSelecUniversal">Selector Universal</h2>
+<p>El selector universal, selecciona todos los  elementos de un documento HTML.<br>
+Se denota por  un “*”
+</p>
+<img src="imagenes/sUniversal.jpeg">
+</div>
+
+<hr>
+
+<!--Selector tipo Etiqueta-->
+<div>
+<h2 id="pagSelectEtiqueta">Selector tipo Etiqueta</h2>
+<p>Selectores tipo etiqueta o de elementos,  son los más simples y comunes.</p>
+<img src="imagenes/sEtiqueta.jpeg">
+</div>
+
+<hr>
+
+<!--Selector de Clase-->
+<div>
+<h2 id="pagSelectClase">Selector de Clase</h2>
+<p>Se utiliza para especificar un estilo a un  grupo de elementos con la misma clase.
+<br>
+Su principal característica, es que se identifica por un punto.
+<br>
+Ejemplo:
+</p>
+<pre>&lt;h1 class=”alerta”&gt; Hola &lt;/h1&gt;</pre>
+<img src="imagenes/sClase.jpeg">
+</div>
+
+<hr>
+
+<!--Selector de ID-->
+<div>
+<h2 id="pagSelectId">Selector de ID</h2>
+<p>Se utiliza para especificar un estilo a un  elemento mediante su id.<br>
+Su principal característica es que se  identifica por un sharp o gato “#”
+<br>
+Ejemplo:
+</p>
+<pre>&lt;id=”contenido”&gt; Esto es un div &lt;/div&gt;</pre>
+<img src="imagenes/sId.jpeg">
+</div>
+
+<hr>
+
+<!--Diferencia entre Clase e ID-->
+<div>
+<h2 id="pagDifClaseId">Diferencia entre Clase e ID</h2>
+<p>Clase: se utiliza para un grupo de  elementos, es decir como el apellido de nuestros elementos.
+<br>
+ID: se utiliza para un "único elemento", no se repite ese id, es decir, como un  numero de INE o CURP de nuestro elemento.
+</p>
+</div>
+
+<hr>
+
+<!--Selector Descendientes-->
+<div>
+<h2 id="pagSelectDesen">Selector Descendientes</h2>
+<p>Afectan a elementos que están contenidos dentro de otro(s) elementos.<br>
+Lo usamos mediante el uso de un espacio entre cada elemento.
+</p>
+<img src="imagenes/sDesendiente.jpeg">
+</div>
+
+<hr>
+
+<!--Selector de Hijo-->
+<div>
+<h2 id="pagSelectHijo">Selector de Hijo</h2>
+<p>Similares a los selectores descendientes. Pero solo afectaran a los hijos directos, es decir a los descendientes directos.<br>
+Lo usamos con el símbolo “>”
+</p>
+<img src="imagenes/sHijo.jpeg">
+</div>
+
+<hr>
+
+<!--Selector de Hermano-->
+<div>
+<h2 id="pagSelectHermano">Selector de Hermano</h2>
+<p>Los selectores de hermanos se emplean para seleccionar elementos adyacentes, es decir  que su elementos padre es el mismo, y ambos  elementos están al mismo nivel.
+<br>
+Hay dos tipos de selectores hermanos:<br>
+Selector Directo<br>
+Selector General
+</p>
+</div>
+
+<hr>
+
+<!--Selector de Hermano Directo-->
+<div>
+<h2 id="pagSelectHerDirec">Selector de Hermano Directo</h2>
+<p>Se utiliza cuando el hermano esta  inmediatamente después de él.<br>
+Lo usamos mediante el símbolo “+”<br>
+A + B = El elemento B debe de estar  inmediatamente después del elemento A en el código HTML.
+</p>
+<img src="imagenes/sHerDirecto.jpeg">
+</div>
+
+<hr>
+
+<!--Selector de Hermano General-->
+<div>
+<h2 id="pagSelectHerGen">Selector de Hermano General</h2>
+<p>Se utiliza cuando el hermano esta después  de él. Lo usamos con el símbolo “~”
+<br>
+A ~ B = El elemento B debe de estar después  del elemento A en el código HTML.
+</p>
+<img src="imagenes/sHerGeneral.jpeg">
+</div>
+
+<hr>
+
+<!--Agrupación de Selectores-->
+<div>
+<h2 id="pagAgruSelect">Agrupación de Selectores</h2>
+<p>La agrupación de selectores se utiliza cuando uno o más selectores tienen las  mismas propiedades.<br>
+Esto nos ayudará a ahorrar líneas de  código.
+Agrupamos con el uso de la coma “,”
+</p>
+<img src="imagenes/agrupacionSelec.jpeg">
+</div>
+
+<hr>
+
+<!--Pseudo-Clases-->
+<div>
+<h2 id="pagPseudoClases">Pseudo-Clases</h2>
+<p>Se utilizan para añadir atributos especiales a algunos selectores.</p>
+<table border="1px">
+     <tr>
+          <th>Pseudo Clase</th><th>Selecciona </th>
+     </tr>
+     <tr>
+          <th>:first-child</th><td>El primer elemento hijo de un elemento.</td>
+     </tr>
+     <tr>
+          <th>:last-child</th><td>El ultimo elemento hijo de un elemento.</td>
+     </tr>
+     <tr>
+          <th>:link</th><td>Todos los ‘links’ sin visitar.</td>
+     </tr>
+     <tr>
+          <th>:visited</th><td>Todos los ‘links’ ya visitados.</td>
+     </tr>
+     <tr>
+          <th>:active</th><td>Los ‘links’ activos.</td>
+     </tr>
+     <tr>
+          <th>:hover</th><td>El elemento en el momento que pasa el mouse sobre él.</td>
+     </tr>
+</table>
+<br>
+<!--:not-->
+<div>
+<h2>:not</h2>
+<table border="1px">
+     <tr>
+          <th>:not(x)</th><td>Selecciona todos los elementos que no corresponden al elemento X  Es decir que permite excluir al elemento X.</td>
+     </tr>
+</table>
+
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3">
+<div class="ws_images"><ul>
+          <li><img src="data3/images/fistchild.jpg" alt=":fist-child" title=":fist-child" id="wows3_0"/></li>
+          <li><img src="data3/images/lastchild.jpg" alt=":last-child" title=":last-child" id="wows3_1"/></li>
+          <li><img src="data3/images/link.jpg" alt=":link" title=":link" id="wows3_2"/></li>
+          <li><img src="data3/images/visited.jpg" alt=":visited" title=":visited" id="wows3_3"/></li>
+          <li><img src="data3/images/active.jpg" alt=":active" title=":active" id="wows3_4"/></li>
+          <li><a href="http://wowslider.net"><img src="data3/images/hover.jpg" alt="bootstrap carousel example" title=":hover" id="wows3_5"/></a></li>
+          <li><img src="data3/images/not.jpg" alt=":not(x)" title=":not(x)" id="wows3_6"/></li>
+     </ul></div>
+     <div class="ws_bullets"><div>
+          <a href="#" title=":fist-child"><span><img src="data3/tooltips/fistchild.jpg" alt=":fist-child"/>1</span></a>
+          <a href="#" title=":last-child"><span><img src="data3/tooltips/lastchild.jpg" alt=":last-child"/>2</span></a>
+          <a href="#" title=":link"><span><img src="data3/tooltips/link.jpg" alt=":link"/>3</span></a>
+          <a href="#" title=":visited"><span><img src="data3/tooltips/visited.jpg" alt=":visited"/>4</span></a>
+          <a href="#" title=":active"><span><img src="data3/tooltips/active.jpg" alt=":active"/>5</span></a>
+          <a href="#" title=":hover"><span><img src="data3/tooltips/hover.jpg" alt=":hover"/>6</span></a>
+          <a href="#" title=":not(x)"><span><img src="data3/tooltips/not.jpg" alt=":not(x)"/>7</span></a>
+     </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel example</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>    
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+</div>
+
+
+
+</div>
+
+<hr>
+
+<!--Pseudo-Elementos-->
+<div>
+<h2 id="pagPseudoElement">Pseudo-Elementos</h2>
+<p></p>
+<table border="1px">
+     <tr>
+          <th>:first-letter</th><td>Seleccionala primera letra de un texto</td>
+     </tr>
+     <tr>
+          <th>:first-line</th><td>Selecciona la primera línea de un párrafo.</td>
+     </tr>
+     <tr>
+          <th>:before</th><td>Inserta contenido antes del elemento referido.</td>
+     </tr>
+     <tr>
+          <th>:after</th><td>Inserta contenido despues del elemento referido</td>
+     </tr>
+     <tr>
+          <th>::selection</th><td>Afecta la selección hecha con el mouse</td>
+     </tr>
+     <tr>
+          <th>:nth-child(#)</th><td>ASelecciona el elemento que coincida con el numero  asignado dentro de el parentesis.</td>
+     </tr>
+</table>
+
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+          <li><img src="data2/images/firstletter.jpg" alt=":first-letter" title=":first-letter" id="wows2_0"/></li>
+          <li><img src="data2/images/firstline.jpg" alt=":first-line" title=":first-line" id="wows2_1"/></li>
+          <li><img src="data2/images/before.jpg" alt=":before" title=":before" id="wows2_2"/></li>
+          <li><img src="data2/images/after.jpg" alt=":after" title=":after" id="wows2_3"/></li>
+          <li><a href="http://wowslider.net"><img src="data2/images/selection.jpg" alt="slideshow javascript" title="::selection" id="wows2_4"/></a></li>
+          <li><img src="data2/images/nthchild.jpg" alt=":nth-child(#)" title=":nth-child(#)" id="wows2_5"/></li>
+     </ul></div>
+     <div class="ws_bullets"><div>
+          <a href="#" title=":first-letter"><span><img src="data2/tooltips/firstletter.jpg" alt=":first-letter"/>1</span></a>
+          <a href="#" title=":first-line"><span><img src="data2/tooltips/firstline.jpg" alt=":first-line"/>2</span></a>
+          <a href="#" title=":before"><span><img src="data2/tooltips/before.jpg" alt=":before"/>3</span></a>
+          <a href="#" title=":after"><span><img src="data2/tooltips/after.jpg" alt=":after"/>4</span></a>
+          <a href="#" title="::selection"><span><img src="data2/tooltips/selection.jpg" alt="::selection"/>5</span></a>
+          <a href="#" title=":nth-child(#)"><span><img src="data2/tooltips/nthchild.jpg" alt=":nth-child(#)"/>6</span></a>
+     </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel example</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>    
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+</div>
+<br>
+
+<hr>
+
+<!--Pseudo-Clases para Formularios-->
+<div>
+<h2 id="pagPseudoForm">Pseudo-Clases para Formularios</h2>
+<table border="1px">
+     <tr>
+          <th>Pseudo Clase</th><th>Selecciona </th>
+     </tr>
+     <tr>
+          <th>:focus</th><td>El campo con el cursor.</td>
+     </tr>
+     <tr>
+          <th>:invalid</th><td>Los elementos que esten en estado de inválidos</td>
+     </tr>
+     <tr>
+          <th>:valid</th><td>Los elementos que esten en estado de válidos.</td>
+     </tr>
+     <tr>
+          <th>:enabled</th><td>Los campos activos.</td>
+     </tr>
+     <tr>
+          <th>:disabled</th><td>Los campos inactivos.</td>
+     </tr>
+     <tr>
+          <th>:checked</th><td>Los campos de tipo “checkbox” y “radio” checados.</td>
+     </tr>
+</table>
+</div>
+
+
+</div>
+
+
+<div class="Derecha">
+<a href="#page6" data-transition="slide" >
+<div  style="width: 0%; height: 4300px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page4" data-transition="slidefade" >
+<div  style="width: 0%; height: 4300px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter5">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina5-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina5_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 6_______//-->
+<div data-role="page" id="page6" data-theme="a"> 
+
+<!--Encabezado pagina6-->
+<div data-role="header" id="pagHeader6">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#pagPropFontface" target="_self" class="vibrar">Propiedad @font-face</a></li>
+          <li><a href="#pagFormatos" target="_self" class="vibrar">Formatos de Fuente soportados</a></li>
+          <li><a href="#pagComoSeUsa" target="_self" class="vibrar">¿Cómo se usa esta propiedad?</a></li>
+          <li><a href="#pagPasosFuente" target="_self" class="vibrar">Pasos para agregar una fuente</a></li>
+          <li><a href="#pagFooter6" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader6" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>3.-CSS</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+<!--Propiedad @font-face -->
+<div>
+<h2 id="pagPropFontface">Propiedad @font-face</h2>
+<p>Permite introducir fuentes nuevas a las predeterminadas de los navegadores.
+Podemos conseguir fuentes de diferentes  sitios web, uno de los más conocidos es:
+</p>
+
+<div class="masInformacion">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li >
+<a href="www.fontsquirrel.com" data-role="button" target="_self">Mas información</a>
+</li>
+</ul>
+</div>
+
+<p>Otra manera de agregar nuevas fuentes a  nuestros sitios web, es utilizando fuentes  de Google</p>
+
+<div class="masInformacion">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li >
+<a href="https://www.google.com/fonts" data-role="button" target="_self">Mas información</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<hr>
+
+<!--Formatos de Fuente soportados-->
+<div>
+<h2 id="pagFormatos">Formatos de Fuente soportados</h2>
+<p></p>
+<img src="imagenes/fuenteSoportadas.png">
+</div>
+
+<hr>
+
+<!--¿Cómo se usa esta propiedad?-->
+<div>
+<h2 id="pagComoSeUsa">¿Cómo se usa esta propiedad?</h2>
+<pre>@font-face { <br>
+font-family: “MiFuente”;<br>
+src: url(“fonts/fuente.woff”) format(“woff”);;<br>
+url(“fonts/fuente.svg”) format(“svg”);<br>
+font-weight: normal;  font-style: normal;<br>
+}
+<br>
+h1{
+font-family: “MiFuente”;
+}
+
+</pre>
+</div>
+
+<hr>
+
+<!--Pasos para agregar una fuente-->
+<div>
+<h2 id="pagPasosFuente">Pasos para agregar una fuente</h2>
+<p>Pasos para agregar una fuente:</p>
+<ol>
+     <li>Entrar a la dirección(url)</li>
+     <li>Ver que fuente es de tu agrado.</li>
+     <li>Dar click en “Quick-Use”.</li>
+     <li>Copiar etiqueta &lt;link&gt; en el HTML.</li>
+     <li>Copiar font-family en el CSS</li>
+</ol>
+</div>
+
+</div>
+
+<div class="Derecha">
+<a href="#page7" data-transition="slide" >
+<div  style="width: 0%; height: 885px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page5" data-transition="slidefade" >
+<div  style="width: 0%; height: 885px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter6">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina6-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina6_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 7_______//-->
+<div data-role="page" id="page7" data-theme="a"> 
+
+<!--Encabezado pagina7-->
+<div data-role="header" id="pagHeader7">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#pagPrefijos" target="_self" class="vibrar">Prefijos</a></li>
+          <li><a href="#pagGradiet" target="_self" class="vibrar">Propiedad Gradient</a></li>
+          <li><a href="#pagPropTransform" target="_self" class="vibrar">Propiedad Transform</a></li>
+          <li><a href="#pagPropiedadTrans" target="_self" class="vibrar">Propiedad Transitio</a></li>
+          <li><a href="#pagAnimaciones" target="_self" class="vibrar">Animaciones</a></li>
+          <li><a href="#pagPropieAnima"" target="_self" class="vibrar">Propiedad Animation</a></li>
+          <li><a href="#pagKeydremes" target="_self" class="vibrar">Propiedad @keyframes</a></li>
+          <li><a href="#pagKeyVRAnima" target="_self" class="vibrar">Propiedad @keyframes y animation</a></li>
+          <li><a href="#pagFooter7" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader7" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>4.-CSS</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+
+<!--Prefijos-->
+<div>
+<h2 id="pagPrefijos">Prefijos</h2>
+<p>En CSS3 existen propiedades nuevas que  cada navegador interpreta de forma  diferente.
+<br>
+Al no haber un estándar por el que se  tengan que regir los navegadores, se deben  usar los llamados “prefijos”.
+</p>
+
+<table>
+     <tr>
+         <th>-webkit</th><td>Para:Chrome,Safari , Konqueror, etc…</td>
+     </tr>
+     <tr>
+         <th>-moz</th><td>Para:Firefox</td>
+     </tr>
+     <tr>
+         <th>-o</th><td>Para:Opera</td>
+     </tr>
+     <tr>
+         <th>-ms</th><td>Para:Internet,Explorer</td>
+     </tr>
+</table>
+</div>
+
+<hr>
+
+<!--Propiedad Gradient-->
+<div>
+<h2 id="pagGradiet">Propiedad Gradient</h2>
+<p>Hay dos tipos principales de Gradientes:<br>
+Linear<br>
+Radial<br>
+Debemos tomar en cuenta que esta propiedad requiere prefijos.
+</p>
+<pre>
+selector {
+background: -prefijo-linear-gradient (dirección, color1,  color2, …);
+}
+<br>
+div {
+background: -webkit-linear-gradient (top,red,blue);
+}
+</pre>
+
+<img src="imagenes/propiedadGrandient.png">
+
+<table>
+     <tr>
+          <th>dirección</th><td>Desde donde empezará el Gradiente y puede ser:<br>
+          Grados (90deg, 5deg).<br>
+          Lados definidos (top, right, bottom,left).</td>
+     </tr>
+     <tr>
+          <th>color#</th><td>El primer color será el cual empiece el  gradiente, el segundo, el tercero, etc… irán  tomando sus posiciones respectivamente.</td>
+     </tr>
+</table>
+
+<div class="masInformacion">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li >
+<a href="http://www.colorzilla.com/" data-role="button" target="_self">Mas información</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<hr>
+
+<!--Propiedad Transform-->
+<div>
+<h2 id="pagPropTransform">Propiedad Transform</h2>
+<p>Esta propiedad aplica una transformación a un elemento en 2D o 3D.<br>
+Permite: rotar, escalar, mover, sesgar,  etc.
+</p>
+
+<pre>
+selector {
+-prefijo-transform: método (valores);
+}
+</pre>
+
+<table>
+     <tr>
+          <th>translate()</th><td>Mueve al elemento desde su posición original en función de los  parámetros (x,y)</td>
+     </tr>
+     <tr>
+          <th>rotate()</th><td>El elemento gira en sentido de las manecillas del reloj en un  grado determinado, las unidades son: “deg”.</td>
+     </tr>
+     <tr>
+          <th>scale()/th><td>El elemento aumenta o disminuye el tamaño dependiendo de los  parámetros (x,y).</td>
+     </tr>
+     <tr>
+          <th>skew()</th><td>El elemento se sesga en un ángulo según los parámetros (x,y).</td>
+     </tr>
+     <tr>
+          <th>matrix()</th><td>Este método toma 6 parámetros que le permiten, rotar, escalar,  trasladar, y sesgar.</td>
+     </tr>
+     <tr>
+          <th>-origin</th><td>Por defecto en una transformación el origen (0,0) toma el centro  del objeto, esta propiedad permite mover el punto de origen.</td>
+     </tr>
+     <tr>
+          <th>rotateX()</th><td>El elemento gira sobre el eje X</td>
+     </tr>
+     <tr>
+          <th>rotateY()</th><td>El elemento gira sobre el eje Y</td>
+     </tr>
+     <tr>
+          <th>rotate3(XYZ)</th><td>Define una rotación similando un efecto 3D.</td>
+     </tr>
+     <tr>
+          <th>skewX()</th><td>Define una transformación de sesgo en el eje X</td>
+     </tr>
+     <tr>
+          <th>skewY()</th><td>Define una transformación de sesgo en el eje Y</td>
+     </tr>
+</table>
+
+
+<strong>Propiedad Transform –matrix()</strong>
+<p>Existen sitios web que nos permitirán usar esta propiedad con más facilidad</p>
+
+<div class="masInformacion">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li >
+<a href="http://www.colorzilla.com/" data-role="button" target="_self">Página WEB</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<hr>
+
+<!--Propiedad Transition-->
+<div>
+<h2 id="pagPropiedadTrans">Propiedad Transitio</h2>
+<p>Esta propiedad nos brinda una manera muy sencilla de animar los cambios en las propiedades CSS, en lugar de que los cambios se produzcan de manera instantánea.</p>
+<pre>
+selector {
+-prefijo-transition: [Propiedad CSS]  [Tiempo] [Función de Tiempo] [Retardo]
+}
+</pre>
+
+<table>
+     <tr>
+          <th>Propiedad CSS</th><td>Se refiere a la propiedad CSS que será animada.<br>Generalmente se coloca el valor “all”.</td>
+     </tr>
+     <tr>
+          <th>Tiempo</th><td>Se refiere al tiempo que durará la transición, puede ser en  segundos o en milisegundos.</td>
+     </tr>
+     <tr>
+          <th>Func. Tiempo</th><td>Se refiere a funciones predefinidas, que permiten variar el  avance de la transición.</td>
+     </tr>
+     <tr>
+          <th>Retardo</th><td>Se refiere al tiempo que tardará la transición en empezar</td>
+     </tr>
+</table>
+
+<p>Propiedades  CSS que se pueden transicionar</p>
+<ul>
+     <li>background</li>
+     <li>border</li>
+     <li>box-shadow</li>
+     <li>color</li>
+     <li>font-size</li>
+     <li>font-weight</li>
+     <li>opacity</li>
+     <li>z-index</li>
+     <li>transform</li>
+     <li>line-height</li>
+</ul>
+
+<strong>Funciones de tiempo para transicionar.</strong>
+
+<table>
+     <tr>
+         <th>linear</th><td>La transición se realiza de manera uniforme.</td>
+     </tr>
+     <tr>
+         <th>ease</th><td>Acelera al inicio, se retarda y acelera al final.</td>
+     </tr>
+     <tr>
+         <th>ease-in</th><td>Se retarda al inicio, pero se acelera al final.</td>
+     </tr>
+     <tr>
+         <th>ease-out</th><td>Acelera al inicio, pero se retarda al final.</td>
+     </tr>
+     <tr>
+         <th>ease-in-out</th><td>Acelera al inicio, se acelera y se retarda al final.</td>
+     </tr>
+</table>
+</div>
+
+<hr>
+
+<!--Animaciones-->
+<div>
+<h2 id="pagAnimaciones">Animaciones</h2>
+<p>En CSS3 podemos animar la transición entre un estilo y otro.
+Las animaciones constan de dos componentes:<br>
+Un estilo que describe la animación.<br>
+Un conjunto de ‘fotogramas’ que indican su estado inicial y su estado final
+</p>
+
+<table>
+     <tr>
+          <th>animation</th><td>Nombre de la propiedad CSS3</td>
+     </tr>
+     <tr>
+          <th>@keyframes</th><td>Permite declarar los fotogramas claves.</td>
+     </tr>
+</table>
+</div>
+
+<hr>
+
+<!--Propiedad Animation-->
+<div>
+<h2 id="pagPropieAnima">Propiedad Animation</h2>
+<p>Esta propiedad consta de varias sub-propiedades.
+<br>
+Con ellas podemos configurar  el ritmo, la duración, el nombre, la función  de tiempo y otros detalles sobre la secuencia  de la animación.<br>
+Ejemplo de una regla animation:
+</p>
+<pre>
+selector { 
+-prefijo-animation: 3s normal 1 mianimacion;
+}
+</pre>
+<p>
+CSS3 nos brinda una sintaxis abreviada de esta propiedad:<br>
+animation: duration timing-function delay direction iteration-count name;     
+</p>
+
+<table>
+     <tr>
+          <th>animation-delay</th><td>Tiempo de retardo en el comienzo de la  animación.</td>
+     </tr>
+     <tr>
+          <th>animation-direction</th><td>Indica el comportamiento de la animación al  inicio y al final.</td>
+     </tr>
+     <tr>
+          <th>animation-duration</th><td>Cantidad de tiempo que tarda en completar su  ciclo la animación.</td>
+     </tr>
+     <tr>
+          <th>animation-iteration-count</th><td>Número de veces que se repite</td>
+     </tr>
+     <tr>
+          <th>animation-name</th><td>Nombre de la animación.</td>
+     </tr>
+     <tr>
+          <th>animation-fill-mode</th><td>Qué estilos se aplicarán al elemento cuando la  animación no se este ejecutando.</td>
+     </tr>
+     <tr>
+          <th>animation-play-state</th><td>Permite pausar y reanudar la animación</td>
+     </tr>
+     <tr>
+          <th>animation-timing-function</th><td>Indica el ritmo de la animación</td>
+     </tr>
+     <tr>
+         <th colspan = "2px">Sub-Propiedad (animation-direction)</th>
+     </tr>
+     <tr>
+          <th>normal</th><td>La animación se reinicia comenzando desde el  principio.</td>
+     </tr>
+     <tr>
+          <th>alternate</th><td>La animación, al terminar un ciclo, invierte su  dirección.</td>
+     </tr>
+     <tr>
+          <th>reverse</th><td>Cada ciclo de la animación se reproduce al revés.</td>
+     </tr>
+     <tr>
+          <th>alternate-reverse</th><td>Es una combinación de las dos anteriores</td>
+     </tr>
+     <tr>
+          <th colspan = "2px">Sub-Propiedad (animation-timing-function)</th>
+     </tr>
+     <tr>
+          <th>linear</th><td>La animación se realiza de manera uniforme</td>
+     </tr>
+     <tr>
+          <th>ease</th><td>Acelera al inicio, se retarda y acelera al final.</td>
+     </tr>
+     <tr>
+          <th>ease-in</th><td>Se retarda al inicio, pero se acelera al final</td>
+     </tr>
+     <tr>
+          <th>ease-out</th><td>Acelera al inicio, pero se retarda al final.</td>
+     </tr>
+     <tr>
+          <th>ease-in-out</th><td>Acelera al inicio, se acelera y se retarda al final</td>
+     </tr>
+     <tr>
+          <th>steps(num,end)</th><td>Divide la animación en un numero de pasos.</td>
+     </tr>
+</table>
+</div>
+
+<hr>
+
+<!--Propiedad @keyframes-->
+<div>
+<h2 id="pagKeydremes">Propiedad @keyframes</h2>
+<p>Permite controlar los pasos en una secuencia  de animación CSS, mediante el  establecimiento de puntos de trayectoria.<br>
+Para usar esta propiedad se crea una regla @keyframes con el mismo nombre declarado en  la propiedad animation-name.
+<br>
+Ejemplo de una regla @keyframes
+</p>
+
+<pre>
+@-prefijo-keyframes mianimacion {  
+       from  { propiedad: valor }
+       to  { propiedad: valor }
+}     
+</pre>
+
+<table>
+     <tr>
+          <th>from</th><td>Estado inicial de la animación</td>
+     </tr>
+     <tr>
+          <th>to</th><td>Estado final de la animación.</td>
+     </tr>
+     <tr>
+          <th>0%</th><td>Estado inicial de la animación.</td>
+     </tr>
+     <tr>
+          <th>100%</th><td>Estado final de la animación.</td>
+     </tr>
+     <tr>
+          <th>x%</th><td>Estado de la animación en un porcentaje x de tiempo.</td>
+     </tr>
+</table>
+</div>
+
+<hr>
+
+<!--Propiedad @keyframes-->
+<h2 id="pagKeyVRAnima">Propiedad @keyframes y animation</h2>
+<div>
+ <p>Ambas propiedades trabajan de la mano, es  decir una no puede trabajar si la otra no  existe.<br>
+Es importante saber que estas dos  propiedades requieren del uso de prefijos.</p>
+</div>
+
+</div>
+
+<div class="Derecha">
+<a href="#page8" data-transition="slide" >
+<div  style="width: 0%; height: 4000px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page6" data-transition="slidefade" >
+<div  style="width: 0%; height: 4000px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter7">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina7-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina7_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 8_______//-->
+<div data-role="page" id="page8" data-theme="a"> 
+
+<!--Encabezado pagina8-->
+<div data-role="header" id="pagHeader8">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#pagQueEsDiseño" target="_self" class="vibrar">Diseño responsivo</a></li>
+          <li><a href="#pagVentajasDiseño" target="_self" class="vibrar">Ventajas</a></li>
+          <li><a href="#pagQueEsQueries" target="_self" class="vibrar">Media Queries</a></li>
+          <li><a href="#pagCondicionesQueries" target="_self" class="vibrar">Condiciones</a></li>
+          <li><a href="#pagQueriesSintaxis" target="_self" class="vibrar">Sintaxis</a></li>
+          <li><a href="#pagFooter8" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader8" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>5.-CSS</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+<!--diseño responsivo-->
+<div>
+<h1 id="pagQueEsDiseño">Diseño responsivo</h1>	
+<h2>¿Qué es?</h2>
+<p>El diseño responsivo es un diseño que responde al tamaño del dispositivo desde el que se está visualizando la web, adaptando las dimensiones del contenido y mostrando los elementos de una forma ordenada y optimizada.<br>
+Consta de una serie de reglas de diseño web que permiten al contenido de un sitio web adaptarse a diferentes resoluciones en diferentes dispositivos.<br>
+En el diseño responsivo haremos mucho uso de medidas de porcentaje o medidas relativas tales como “em” , “%”, etc… <br>
+Aun así es válido poder trabajar con pixeles.
+
+</p>
+</div>
+
+
+<!--diseño responsivo ventajas-->
+<div>	
+<h2 id="pagVentajasDiseño">Ventajas</h2>
+<p>Reducción de costos de producción<br>
+Eficiencia en el mantenimiento<br>
+Mejor usabilidad<br>
+Impacto en el Visitante
+</p>
+</div>
+
+<hr>
+
+<!--Media Queries-->
+<div>
+<h1 id="pagQueEsQueries">Media Queries</h1>	
+<h2>¿Qué son?</h2>
+<p>Permite la representación del contenido para adaptarse a la resolución de la pantalla. 
+Añadido en CSS3 permiten que el contenido se adapte a un rango específico sin tener que cambiar el contenido.
+</p>
+</div>
+
+<!--Condiciones-->
+<div>	
+<h2 id="pagCondicionesQueries">Condiciones</h2>
+<p>¿Qué puede ser una condición? 
+Usamos el diseño responsivo porque el ancho de los dispositivos varían, debemos de considerar que “la condición debe de ir de acuerdo al ancho de pantalla” 
+</p>
+<img src="imagenes/condicionesQueries.png">
+</div>
+
+
+<!--Media Queries-->
+<div>	
+<h2 id="pagQueriesSintaxis">Sintaxis</h2>
+<pre>
+@media not|only mediatype and (media feature) {    
+CSS-Code;
+}
+</pre>
+</div>
+
+</div>
+
+<div class="Derecha">
+<a href="#page9" data-transition="slide" >
+<div  style="width: 0%; height: 800px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page7" data-transition="slidefade" >
+<div  style="width: 0%; height: 800px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter8">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina8-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina8_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 9_______//-->
+<div data-role="page" id="page9" data-theme="a"> 
+
+<!--Encabezado pagina9-->
+<div data-role="header" id="pagHeader9">
+
+<div class="menuFlotante">
+<nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#Inicio" target="_self" class="vibrar">Inicio</a></li>
+          <li><a href="#QueEsPHp" target="_self" class="vibrar">¿Qué es?</a></li>
+          <li><a href="#pagVariablesphp" target="_self" class="vibrar">Variables</a></li>
+          <li><a href="#pagFuncionesphp" target="_self" class="vibrar">Funciones</a></li>
+          <li><a href="#pagFooter9" target="_self" class="vibrar">Abajo</a></li>
+          <li><a href="#pagHeader9" target="_self" class="vibrar">Arriba</a></li>
+        </ul>
+        <a class="mobile-nav-icon js-mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
+    </nav>
+</div>
+<h1>PHP (Inicios)</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+<!--Que es PHP-->
+<div>     
+<h2 id="QueEsPHp">¿Qué es?</h2>
+<p>PHP es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.</p>
+<p>Un ejemplo introductorio</p>
+<pre>
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ejemplo&lt;/title&gt;
+    &lt;/head&gt;
+   &lt;body&gt;
+
+        &lt;?php
+            echo "¡Hola, soy un script de PHP!";
+        ?&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;    
+</pre>
+</div>
+
+<hr>
+
+<!--Variables-->
+<div>	
+<h2 id="pagVariablesphp">Variables</h2>
+<p>Una variable puede tener un nombre corto (como xey) o un nombre más descriptivo (edad, carname, total_volume).
+<br>
+Reglas para las variables de PHP:
+<br>
+Una variable comienza con el signo $, seguido del nombre de la variable<br>
+Un nombre de variable debe comenzar con una letra o el carácter de subrayado<br>
+Un nombre de variable no puede comenzar con un número<br>
+Un nombre de variable solo puede contener caracteres alfanuméricos y guiones bajos (Az, 0-9 y _)<br>
+Los nombres de las variables distinguen entre mayúsculas y minúsculas ($ age y $ AGE son dos variables diferentes)</p>
+
+
+
+<tr>Crear variables(declarar)</tr>
+<p>En PHP, una variable comienza con el signo $, seguido del nombre de la variable
+<br>
+Nota: Cuando asigna un valor de texto a una variable, ponga comillas alrededor del valor.
+<br>
+Nota: A diferencia de otros lenguajes de programación, PHP no tiene ningún comando para declarar una variable. Se crea en el momento en que le asigna un valor por primera vez.
+<br>
+Ejemplo:
+</p>
+<img src="imagenes/php1Var.jpeg">
+<p>Después de la ejecución de las declaraciones anteriores, la variable $ txt contendrá el valor Hello world! , la variable $ x tendrá el valor 5 , y la variable $ y tendrá el valor 10.5 .</p>
+</div>
+
+<hr>
+
+<!--Funciones-->
+<div>	
+<h2 id="pagFuncionesphp">Funciones</h2>
+<p>
+El verdadero poder de PHP proviene de sus funciones; tiene más de 1000 funciones incorporadas.<br>  
+Además de las funciones integradas de PHP, podemos crear nuestras propias funciones.<br>
+Una función es un bloque de instrucciones que se puede usar repetidamente en un programa.<br>
+Una función no se ejecutará de inmediato cuando se cargue una página.<br>
+Una función se ejecutará mediante una llamada a la función.
+</p>
+
+<strong>Crear una función</strong>
+<p>Una declaración de función definida por el usuario comienza con la palabra "function"</p>
+     <div data-role="collapsible">
+           <h1>Ejemplos</h1>
+           <p>Uno</p>
+          <img src="imagenes/php2Fun.jpeg">
+          <p>Dos</p>
+          <img src="imagenes/php3Fun.jpeg">
+      </div>
+<strong>Devolviendo valores</strong>
+<p>Para permitir que una función devuelva un valor, use la "return"
+<br>
+Ejemplo:</p>
+<img src="imagenes/php4Fun.jpeg">
+</div>
+
+
+</div>
+
+<div class="Derecha">
+<a href="#page10" data-transition="slide" >
+<div  style="width: 0%; height: 1700px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page8" data-transition="slidefade" >
+<div  style="width: 0%; height: 1700px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter9">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina9-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina9_______//-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//_______PAGINA 10_______//-->
+<div data-role="page" id="page10" data-theme="a"> 
+
+<!--Encabezado pagina10-->
+<div data-role="header" id="pagHeader10">
+
+<h1>Datos del desarrollador</h1>
+</div>
+
+<!--Cuerpo-->
+
+<div data-role="main">
+<div class="Paginas">
+
+
+<div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+     </div>
+
+  <!--Datos del desarrollador-->
+    <div id="pagDatosDesa">
+       <h2>Datos del desarrollador</h2>
+        <table border="1px">
+        <tr>
+          <th>Nombre</th><td>Jeser Martínez Grande</td>
+        </tr>
+        <tr>
+          <tr>
+          <th>Grupo</th><td>F</td>
+        </tr>
+        <tr>
+          
+          <tr>
+          <th>Semestre</th><td>4to</td>
+        </tr>
+        <tr>
+          <tr>
+          <th>Submodulo</th><td>Desarrolla Aplicaciones Móviles  (DAM)</td>
+        </tr>
+        <tr>
+      
+          <tr>
+          <th>Nombre del docente</th><td>Lic. José Antonio Gómez Hernández</td>
+        </tr>
+        <tr>
+         <th colspan = "2px">Etiquetas de tablas</th>
+        </tr>
+       </table>
+    </div>
+
+
+</div>
+
+<div class="Derecha">
+<a href="#page11" data-transition="slide" >
+<div  style="width: 0%; height: 280px;"></div></a> 
+</div>
+
+<div class="Izquierda">
+<a href="#page9" data-transition="slidefade" >
+<div  style="width: 0%; height: 280px;"></div></a> 
+</div>
+
+<div class="Abajo" id="pagFooter10">
+<a href="#Inicio" data-transition="slideup">
+<div  style="width: 1000px; height: 25px;"></div></a> 
+</div>
+
+
+
+</div><!--Fin Cuerpo-->
+
+<!--Footer pagina10-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<h4>App10/ Jeser Martínez Grande</h4>
+<img src="res/android/mdpi.png" width="56" height="46" class="icono">
+</div>
+</div><!--//_______Fin pagina10_______//-->
+
+</body>
+
+</html>

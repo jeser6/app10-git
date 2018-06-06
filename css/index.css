@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+/*-----------------------Reglas generales-----------------------*/
+* {
+margin: 0;
+padding: 0;
+  }
+
+h2 {
+margin-bottom: 3px;
+   }
+
+hr {
+margin-top: 10px;
+margin-bottom: 5px;
+   }
+
+p {
+text-align: justify;
+  } 
+
+ol {
+margin-left: 20px;
+   }
+
+ul {
+margin-left: 20px;
+   }   
+
+img:not(.icono):not(#pagina1HTML):not(#pagina4CSS) {
+width: 100%;
+                                  }
+
+
+/*------------------Reglas generales Extras------------------*/
+/*-------------Ajuste de paginas-------------*/
+.Paginas {
+width: 90%;
+display: inline-block;
+         }
+
+.Derecha {
+width: 5%;
+float: right;
+         }
+
+.Izquierda {
+width: 5%;
+float: left;
+           }
+
+.Abajo {
+  border: 1px solid black;
+}
+
+
+/*--------Icono para abrir el menu---------*/
+.mobile-nav-icon {
+position:fixed;
+                 }
+
+.mobile-nav-icon i {
+font-size: 200%;
+color: black;
+                   }
+
+
+/*----------Contenido del icono-----------*/
+.main-nav {
+display: none;
+border: 1px solid black;
+position:fixed;
+margin: 25px;
+background-color: #555;
+list-style: none;
+         }
+
+.main-nav li a:link,
+.main-nav li a:visited {
+display: block;
+text-decoration: none;
+padding: 10px;
+color: white;
+                       }
+
+.menuFlotante {
+position: absolute; 
+z-index: 100;
+              }
+
+/*Color de fondo de las opciones en el menu flotante*/
+.main-nav li a:hover {
+background-color: black;
+                     }
+        
+
+/*--------Vibrar el menu flotan---------*/
+#uno li {
+display: inline-block;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+        }
+
+#dos li {
+display: inline-block;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+        }
+
+/*-----Botones de mas informacion------*/
+.masInformacion {
+margin: 0 auto;
+width: 70%;
+
+                }
+
+@media screen and (min-width: 10px) {
+.masInformacion a {
+display:block;
+                  }
+                                    } 
+
+/*--------Botones para moverse-------*/
+.Botones {
+display: inline-block;
+float: right;
+margin-left: 10px;
+         }
+
+/*-----------Ajustar tablas-----------*/
+table:not(#tabQues) {
+text-align: center;
+            }
+table:not(#tabQues) th{
+padding-right: 6px;
+padding-left: 6px;
+            }
+table:not(#tabQues)  td{
+padding-right: 6px;
+padding-left: 6px;
+            }
+
+/*---------------HTML-----------------*/
+/*-------Que es y Evolucion------*/
+/*-TablaQueEsHTML-*/ 
+#tablaQues {
+border:  1px solid black;
+           }
+/*-ImagenPagina1HTML-*/ 
+#pagina1HTML {
+width: 100px;
+             }
+
+/*-AjustarImagenYTabla-*/              
+#QueEs div {
+display: inline-block;
+           }
+
+/*----------Etiquetas----------*/
+/*-AlinearPresConPs-*/
+.E1,.E2 {
+  display: inline-block;
+       }
+
+/*----------Elementos----------*/
+/*-ContornoEjemploElmento-*/ 
+#ejemploElemento h3 {
+display: inline-block;
+border: 1px solid black;
+                 }
+/*-ContornoTipoElmentos-*/    
+.bloques {
+border: 1px dashed #0000CD ;
+width: 50px;
+text-align: center;
+         }
+/*-Alinear ejemplos de elementos-*/
+.elemtosAlineados {
+display: inline-block;
+                  }
+/*-Elemento en linea-*/
+#enLinea div{
+display: inline-block;
+         }                  
+/*-Elemento en linea-*/
+#enBloque div{
+margin-bottom: 5px;
+         }
+#enLinea {
+float: right;
+         }
+
+
+/*---------------HTML5-----------------*/
+/*-Centrar nuevas funciones-*/
+#pagEjmplosTec {
+  text-align:  center;
+               }
+
+/*-Dividir inputs-*/
+#tablaInputs table{
+  width: 100%;
+              }
+
+.tablaEspa {
+background-color: black;
+ height: 2px;
+}
+/*---------------CSS1-----------------*/
+/*-------Que es y Evolucion------*/
+
+/*-ImagenPagina4CSS-*/ 
+#pagina4CSS {
+width: 100px;
+             }
